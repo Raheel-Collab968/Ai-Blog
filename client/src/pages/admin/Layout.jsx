@@ -2,7 +2,6 @@ import React from 'react'
 import { assets } from '../../assets/assets'
 import {  Outlet ,useNavigate } from 'react-router-dom'
 import Sidebar from '../../components/admin/Sidebar'
-import DashBoard from './DashBoard'
 import { useAppContext } from '../../context/AppContext'
 
 const Layout = () => {
@@ -27,7 +26,6 @@ const Layout = () => {
     <div className='flex h-[calc(100vh-70px)]'>
         <Sidebar/>
         <Outlet/> 
-        {/* <DashBoard/> */}
     </div>
     </>
   )
