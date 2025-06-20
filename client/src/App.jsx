@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-<<<<<<< HEAD
 
 // ✅ Pages
 import Home from './pages/Home.jsx'
@@ -8,7 +7,7 @@ import Blog from './pages/Blog.jsx'
 
 // ✅ Admin Pages
 import Layout from './pages/admin/Layout.jsx'
-import DashBoard from './pages/admin/Dashboard.jsx'
+import Dashboard from './pages/admin/Dashboard.jsx'
 import AddBlog from './pages/admin/AddBlog.jsx'
 import ListBlog from './pages/admin/ListBlog.jsx'
 import Comments from './pages/admin/Comments.jsx'
@@ -22,19 +21,6 @@ import 'quill/dist/quill.snow.css'
 // ✅ Context
 import { Toaster } from 'react-hot-toast'
 import { useAppContext } from './context/AppContext.jsx'
-=======
-import Home from './pages/Home.jsx'
-import Blog from './pages/Blog'
-import Layout from './pages/admin/Layout'
-import DashBoard from './pages/admin/DashBoard'
-import AddBlog from './pages/admin/AddBlog'
-import ListBlog from './pages/admin/ListBlog'
-import Comments from './pages/admin/Comments'
-import Login from './components/admin/Login'
-import 'quill/dist/quill.snow.css' 
-import {Toaster} from 'react-hot-toast'
-import { useAppContext } from './context/AppContext'
->>>>>>> e0d61dc (Fix casing issue in Dashboard import for Vercel)
 
 const App = () => {
   const { token } = useAppContext()
@@ -47,7 +33,7 @@ const App = () => {
         <Route path='/blog/:id' element={<Blog />} />
 
         <Route path='/admin' element={token ? <Layout /> : <Login />}>
-          <Route index element={<DashBoard />} />
+          <Route index element={<Dashboard />} />
           <Route path='addBlog' element={<AddBlog />} />
           <Route path='listBlog' element={<ListBlog />} />
           <Route path='comments' element={<Comments />} />
