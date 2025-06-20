@@ -7,7 +7,7 @@ import Blog from './pages/Blog.jsx'
 
 // ✅ Admin Pages
 import Layout from './pages/admin/Layout.jsx'
-import DashBoard from './pages/admin/DashBoard.jsx'
+import DashBoard from './pages/admin/Dashboard.jsx'
 import AddBlog from './pages/admin/AddBlog.jsx'
 import ListBlog from './pages/admin/ListBlog.jsx'
 import Comments from './pages/admin/Comments.jsx'
