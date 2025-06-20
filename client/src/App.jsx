@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+<<<<<<< HEAD
 
 // ✅ Pages
 import Home from './pages/Home.jsx'
@@ -21,6 +22,19 @@ import 'quill/dist/quill.snow.css'
 // ✅ Context
 import { Toaster } from 'react-hot-toast'
 import { useAppContext } from './context/AppContext.jsx'
+=======
+import Home from './pages/Home.jsx'
+import Blog from './pages/Blog'
+import Layout from './pages/admin/Layout'
+import DashBoard from './pages/admin/DashBoard'
+import AddBlog from './pages/admin/AddBlog'
+import ListBlog from './pages/admin/ListBlog'
+import Comments from './pages/admin/Comments'
+import Login from './components/admin/Login'
+import 'quill/dist/quill.snow.css' 
+import {Toaster} from 'react-hot-toast'
+import { useAppContext } from './context/AppContext'
+>>>>>>> e0d61dc (Fix casing issue in Dashboard import for Vercel)
 
 const App = () => {
   const { token } = useAppContext()
